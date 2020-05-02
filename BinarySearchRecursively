@@ -50,9 +50,9 @@ void printl(list *head)
 }
 list * find_mid(list *head,list *last)
 {
+    if(head==NULL)  return NULL;
     list *slow=head;
     list *fast=head->next;
-    if(head==NULL)  return NULL;
     if(fast==last)  return head;
     while(fast!=last)
     {
